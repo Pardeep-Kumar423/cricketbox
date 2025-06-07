@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>IPL 2025 Team Squads</title>
+  <link rel="stylesheet" href="squad.css">
+</head>
+<body>
+  <header>
+    <h1>Squad</h1>
+        <nav class="navbar">
+            <ul>
+                <li><img src="logo.jpg" alt="logo"></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="match.html">Matches</a></li>
+                <li><a href="squad.html">Squad</a></li>
+                <li>
+                    <form class="search-form">
+                        <input type="text" placeholder="Search..." aria-label="Search">
+                        <button type="submit">Search</button>
+                    </form>
+                </li>
+                <li class="auth-buttons">
+                    <a href="loginpage.html" class="sign-button">Sign In</a>
+                    <a href="signup.html" class="sign-button">Register</a>
+                </li>
+            </ul>
+        </nav>
+    <!-- <h2>IPL 2025 - Team Squads</h2> -->
+  </header>
+
+  <main class="main-section">
+    <h2>IPL 2025 - Team Squads</h2>
+    <select id="teamSelect">
+      <option value="CSK">Chennai Super Kings</option>
+      <option value="MI">Mumbai Indians</option>
+      <option value="RCB">Royal Challengers Bangalore</option>
+      <option value="KKR">Kolkata Knight Riders</option>
+      <option value="DC">Delhi Capitals</option>
+      <option value="RR">Rajasthan Royals</option>
+      <option value="PBKS">Punjab Kings</option>
+      <option value="GT">Gujarat Titans</option>
+      <option value="LSG">Lucknow Super Giants</option>
+      <option value="SRH">Sunrisers Hyderabad</option>
+    </select>
+
+    <div id="squad-container" class="squad-container"></div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 CricBox - All Rights Reserved</p>
+  </footer>
+
+  <script src="squad.js"></script>
+</body>
+</html>

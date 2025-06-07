@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign up</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div class="auth-container">
+        <h1>Welcome to CricBox</h1>
+    
+    <div class="form-container">
+         <!-- Register Form -->
+         <form id="register-form" method="POST" action="signup.php">
+            <h2>Register</h2>
+            <label for="register-username">Username:</label>
+            <input type="text" id="register-username" name="username" required>
+            <label for="register-email">Email:</label>
+            <input type="text" id="register-email" name="email" required>
+            <label for="register-password">Password:</label>
+            <input type="password" id="register-password" name="password" required>
+            <label for="register-confirm-password">Confirm Password:</label>
+            <input type="password" id="register-confirm-password" name="confirm_password" required>
+            <button type="submit">Register</button>
+            
+        </form>
+        <p class="toggle-text">Already have an Account! <a href="loginpage.html">Sign in</a></p>
+    </div>
+    </div>
+    <script src="signup.js"></script>
+</body>
+</html>

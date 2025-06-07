@@ -1,0 +1,317 @@
+body {
+    background-image: url("back-ground.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #007bff;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+}
+
+h1 {
+    margin: 0;
+    justify-content: center;
+    text-decoration: underline;
+    font-size: 50px;
+    background: linear-gradient(to left, #ffcc00, #ffffff);
+    color: white;
+    -webkit-text-stroke: 1px black; /* Border thickness and color */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.navbar {
+    background-color: #0056b3;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+}
+
+.navbar li {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.navbar ul li.auth-buttons {
+    margin-left: auto;
+    gap: 10px;
+}
+
+.navbar img {
+    height: 40px;
+    width: auto;
+    margin-right: 1rem;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #003d80;
+    color: #ffcc00;
+    border: 2px solid white;
+
+}
+
+.sign-button {
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-left: 10px;
+}
+
+.sign-button:hover {
+    background-color: #e64a19;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.search-form input {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    margin-right: 5px;
+}
+
+.search-form button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-form button:hover {
+    background-color: #0056b3;
+}
+
+main {
+    padding: 4rem;
+    text-align: center;
+    /* Removed height: 100vh; to allow natural content flow */
+}
+
+.score-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.team {
+    border-radius: 8px;
+    padding: 1rem;
+    width: 150px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.team h2 {
+    margin: 0 0 1rem;
+}
+
+.score {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.update-section button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 0.5rem;
+}
+
+.update-section button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #007bff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.hero {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    /* Removed height: 100vh; */
+}
+
+.video-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.video {
+    width: 300px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+}
+
+video {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+video:hover {
+    transform: scale(1.05);
+}
+
+.matches-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.match-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.match-card .match-info {
+    margin-bottom: 10px;
+}
+
+.match-card .team-logos {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.match-card .team-logos img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+.slider {
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    width: 100%;
+}
+
+.slider .match-card {
+    border-radius: 8px;
+    padding: 10px;
+    min-width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.slider .match-card img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.slider .match-card h3 {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.slider .match-card p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.slider-arrow {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 24px;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.slider-arrow:hover {
+    background-color: #0056b3;
+}
+
+.left-arrow {
+    left: 10px;
+}
+
+.right-arrow {
+    right: 10px;
+}
